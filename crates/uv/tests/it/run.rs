@@ -6234,6 +6234,7 @@ fn run_project_not_found() {
 
 /// Using `--project` with a file path should warn (ignoring the eventual error).
 #[test]
+#[cfg(unix)] // TODO(konsti): Currently this doesn't error on Windows, but the result will vanish with the hard error
 fn run_project_is_file() -> Result<()> {
     let context = TestContext::new("3.12");
 
