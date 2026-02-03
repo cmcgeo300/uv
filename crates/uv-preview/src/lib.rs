@@ -36,6 +36,7 @@ pub enum PreviewFeature {
     GcsEndpoint = 1 << 21,
     AdjustUlimit = 1 << 22,
     SpecialCondaEnvNames = 1 << 23,
+    PublishRequireNormalized = 1 << 24,
 }
 
 impl PreviewFeature {
@@ -66,6 +67,7 @@ impl PreviewFeature {
             Self::GcsEndpoint => "gcs-endpoint",
             Self::AdjustUlimit => "adjust-ulimit",
             Self::SpecialCondaEnvNames => "special-conda-env-names",
+            Self::PublishRequireNormalized => "publish-require-normalized",
         }
     }
 }
@@ -109,6 +111,7 @@ impl FromStr for PreviewFeature {
             "metadata-json" => Self::MetadataJson,
             "adjust-ulimit" => Self::AdjustUlimit,
             "special-conda-env-names" => Self::SpecialCondaEnvNames,
+            "publish-require-normalized" => Self::PublishRequireNormalized,
             _ => return Err(PreviewFeatureParseError),
         })
     }
@@ -335,6 +338,10 @@ mod tests {
         assert_eq!(
             PreviewFeature::SpecialCondaEnvNames.as_str(),
             "special-conda-env-names"
+        );
+        assert_eq!(
+            PreviewFeature::PublishRequireNormalized.as_str(),
+            "publish-require-normalized"
         );
     }
 }
