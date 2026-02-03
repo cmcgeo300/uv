@@ -66,7 +66,8 @@ fn resolve_uv_toml() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -271,7 +272,8 @@ fn resolve_uv_toml() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -477,7 +479,8 @@ fn resolve_uv_toml() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -715,7 +718,8 @@ fn resolve_pyproject_toml() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -922,7 +926,8 @@ fn resolve_pyproject_toml() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -1105,7 +1110,8 @@ fn resolve_pyproject_toml() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -1337,7 +1343,8 @@ fn resolve_index_url() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -1577,7 +1584,8 @@ fn resolve_index_url() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -1875,7 +1883,8 @@ fn resolve_find_links() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -2104,7 +2113,8 @@ fn resolve_top_level() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -2292,7 +2302,8 @@ fn resolve_top_level() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -2530,7 +2541,8 @@ fn resolve_top_level() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -2791,7 +2803,8 @@ fn resolve_user_configuration() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -2969,7 +2982,8 @@ fn resolve_user_configuration() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -3147,7 +3161,8 @@ fn resolve_user_configuration() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -3327,7 +3342,8 @@ fn resolve_user_configuration() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -3526,7 +3542,8 @@ fn resolve_tool() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -3720,7 +3737,8 @@ fn resolve_poetry_toml() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -3932,7 +3950,8 @@ fn resolve_both() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -4183,7 +4202,8 @@ fn resolve_both_special_fields() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -4513,7 +4533,8 @@ fn resolve_config_file() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -4818,7 +4839,8 @@ fn resolve_skip_empty() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -4999,7 +5021,8 @@ fn resolve_skip_empty() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -5199,7 +5222,8 @@ fn allow_insecure_host() -> anyhow::Result<()> {
                     port: None,
                 },
             ],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -5391,7 +5415,8 @@ fn index_priority() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -5631,7 +5656,8 @@ fn index_priority() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -5877,7 +5903,8 @@ fn index_priority() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -6118,7 +6145,8 @@ fn index_priority() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -6366,7 +6394,8 @@ fn index_priority() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -6607,7 +6636,8 @@ fn index_priority() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -6861,7 +6891,8 @@ fn verify_hashes() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -7032,7 +7063,8 @@ fn verify_hashes() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -7201,7 +7233,8 @@ fn verify_hashes() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -7372,7 +7405,8 @@ fn verify_hashes() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -7541,7 +7575,8 @@ fn verify_hashes() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -7711,7 +7746,8 @@ fn verify_hashes() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -7896,7 +7932,8 @@ fn preview_features() {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -8038,7 +8075,8 @@ fn preview_features() {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -8155,7 +8193,8 @@ fn preview_features() {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -8297,7 +8336,8 @@ fn preview_features() {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -8417,7 +8457,8 @@ fn preview_features() {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -8539,7 +8580,8 @@ fn preview_features() {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -8677,7 +8719,8 @@ fn upgrade_pip_cli_config_interaction() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -8856,7 +8899,8 @@ fn upgrade_pip_cli_config_interaction() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -9058,7 +9102,8 @@ fn upgrade_pip_cli_config_interaction() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -9235,7 +9280,8 @@ fn upgrade_pip_cli_config_interaction() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -9406,7 +9452,8 @@ fn upgrade_pip_cli_config_interaction() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -9578,7 +9625,8 @@ fn upgrade_pip_cli_config_interaction() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -9815,7 +9863,8 @@ fn upgrade_project_cli_config_interaction() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -9937,7 +9986,8 @@ fn upgrade_project_cli_config_interaction() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -10082,7 +10132,8 @@ fn upgrade_project_cli_config_interaction() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -10202,7 +10253,8 @@ fn upgrade_project_cli_config_interaction() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -10312,7 +10364,8 @@ fn upgrade_project_cli_config_interaction() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -10423,7 +10476,8 @@ fn upgrade_project_cli_config_interaction() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -10598,7 +10652,8 @@ fn build_isolation_override() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
@@ -10772,7 +10827,8 @@ fn build_isolation_override() -> anyhow::Result<()> {
             https_proxy: None,
             no_proxy: None,
             allow_insecure_host: [],
-            timeout: [TIME],
+            read_timeout: [TIME],
+            connect_timeout: [TIME],
             retries: 3,
         },
         concurrency: Concurrency {
