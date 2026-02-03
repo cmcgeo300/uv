@@ -445,10 +445,16 @@ impl Cache {
         // We have to put this below the gitignore. Otherwise, if the build backend uses the rust
         // ignore crate it will walk up to the top level .gitignore and ignore its python source
         // files.
-        fs_err::OpenOptions::new().create(true).write(true).open(
-            root.join(CacheBucket::SourceDistributions.to_str())
-                .join(".git"),
-        )?;
+        let phony_git = root
+            .join(CacheBucket::SourceDistributions.to_str())
+            .join(".git");
+        // The extra check is for read-only cache support.
+        if !phony_git.exists() {
+            fs_err::OpenOptions::new()
+                .create(true)
+                .write(true)
+                .open(phony_git)?;
+        }
 
         Ok(())
     }
