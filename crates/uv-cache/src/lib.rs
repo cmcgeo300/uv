@@ -450,7 +450,10 @@ impl Cache {
             .join(".git");
         // The extra check is for read-only cache support.
         if !phony_git.exists() {
-            fs_err::OpenOptions::new().create(true).open(phony_git)?;
+            fs_err::OpenOptions::new()
+                .create(true)
+                .write(true)
+                .open(phony_git)?;
         }
 
         Ok(())
